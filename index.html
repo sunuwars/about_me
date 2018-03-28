@@ -1,0 +1,138 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+
+
+<title>Sangita Sunuwar</title>
+
+
+</head>
+
+<body>
+
+
+<div class="heading">
+<h2>Sangita Sunuwar</h2>
+</div>
+
+<div class="slider-container" >
+	<div class="ltarrow" ><a id="aleft" onclick="leftclick()" ><img src="image/icon/fwd2.png"/></a></div>
+     <div class="rtarrow"><a id="aright" onclick="rightclick()"><img src="image/icon/arrow3.png" /></a></div>
+     <div class="playBtn_active" id="play-btn" onclick="playBtn()"></div>
+     <div class="pauseBtn_deactive" id="pause-btn" onclick="pauseBtn()"></div>
+     <div class="coins">
+     <ul class="coinblock">
+     	<li id="coinli-0" class="coinli" onclick="loadImage('coinli-0')"></li>
+        <li id="coinli-1" class="coinli" onclick="loadImage('coinli-1')"></li>
+        <li id="coinli-2" class="coinli" onclick="loadImage('coinli-2')"></li>
+     </ul>
+     </div>
+    <div class=".cl"></div>
+	<img  src="image/antartica/penguinsbysea.jpg" height="300" id="photo" >
+    <div class=".cl"></div>
+</div>
+
+
+
+
+<div class="wrapper">
+<p>I have always been fascinated by logical reasoning used to solve problems in coding and pixels lit up in response excites me. I have worked in Learndirect online learning system as an administrator for 3 years. I admired the system and used to wonder and wish if I could do something like that. I have seen the web site improve and evolve delivering users’ needs and interest. Often times, the changes were the ones I wished it could be implemented there.
+</p>
+
+<p>At home, me and my kids (aged 5 and 2 then) used to make up a lot of games (guessing games, colouring challenge etc.). Small codes written by me (guessing game, random probability), when generated random results, used to amaze and entertain them. 
+</p>
+
+<p>Following my heart, I went to India to pursue my passion. I joined Analyze System as a trainee in Nov 2015. I have learnt various technologies that I knew nothing about before and used them to solve problems. Every day I face new challenges and solving them has strenghthened my can-do atttitude. On coming back to UK I have realised that I have a lot of skills gap and had been doing mostly procedural programming in India. Lately I have been teaching myself C# and helping to develop point of sale for Analyze System using Visual Studio 2010 and C#.net. I strive to cater high quality, user-friendly, cost-effective solutions that bring dreams within everyone’s reach.
+</p>
+
+<p>My husband had been serving in British Army and I had been moving with him between Brunei and UK. I have worked various interesting job roles in UK and overseas. I believe with my hard work, positive attitude and life experiences, I have a lot to offer.
+</p>
+</div>
+
+<script>
+var imgarray = new Array ("image/antartica/penguinsbysea.jpg", "image/antartica/twopenguins.jpg", "image/antartica/winter-snow-penguin-antarctica-animals.jpg");
+
+var imgActive = document.getElementById('photo');
+//var y;
+var imgArrayIndex;
+var activeImgArrayIndex;
+var len = imgarray.length;
+var play = true;
+alert("good morning")
+
+function pauseBtn()
+{//alert('pause');
+	play = false;
+	clearTimeout(myvar);
+	document.getElementById("play-btn").className = 'playBtn_deactive';  
+	document.getElementById("pause-btn").className = 'pauseBtn_active';
+}
+function playBtn()
+{ //alert('play');
+	play = true;
+	imgArrayIndex = activeImgArrayIndex ;
+	document.getElementById("play-btn").className = 'playBtn_active';  
+	document.getElementById("pause-btn").className = 'pauseBtn_deactive';
+	banner(imgArrayIndex);
+//myvar = window.setTimeout( "banner("+imgArrayIndex+")", 500);
+	
+}
+
+function banner(imgArrayIndex) 
+{
+	if(imgArrayIndex >= len)
+	{
+		imgArrayIndex = 0;
+	}
+	
+	imgActive.src = imgarray[imgArrayIndex]; 
+	activeImgArrayIndex = imgArrayIndex; 
+	selectCoin(activeImgArrayIndex);
+	
+	imgArrayIndex = imgArrayIndex + 1;
+	
+	if(play)
+		myvar = window.setTimeout( "banner("+imgArrayIndex+")", 4500); 
+}
+
+function leftclick() 
+{
+	clearTimeout(myvar);
+	imgArrayIndex = activeImgArrayIndex - 1;
+	if(imgArrayIndex < 0)
+	imgArrayIndex = len - 1;
+	banner(imgArrayIndex);
+}
+
+function rightclick()
+{
+	clearTimeout(myvar);
+	imgArrayIndex = activeImgArrayIndex + 1;
+	banner(imgArrayIndex);
+}
+
+function selectCoin(activeImgArrayIndex) 
+{
+	for(var z=0; z<len ; z++)
+		{
+			if(z == activeImgArrayIndex)
+				document.getElementById("coinli-"+z).className = "coinli_selected"; 
+			else
+				document.getElementById("coinli-"+z).className = 'coinli';
+		}
+}
+
+function loadImage(selectedCoin) {
+	imgArrayIndex = parseInt(selectedCoin.slice(7));
+	clearTimeout(myvar);  
+
+	banner(imgArrayIndex);
+	
+}
+
+banner(0);
+</script>
+</body>
+</html>
