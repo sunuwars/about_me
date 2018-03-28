@@ -4,7 +4,7 @@
 body{
 	width:80%;
 	margin:auto;
-	border:1px solid green;
+	
 	/*background-color:#c4c0cf;*/
 	background-color:#f4f4f4;
 	font:normal 16px/1.6 ProximaNova-Regular, "Proxima Nova Rg", "Proxima Nova", sans-serif, Arial;
@@ -12,25 +12,25 @@ body{
 
 .heading {
 	width:100%;
-	border:1px solid yellow;
+	
 		
 }
 #name-box{
 	width:20%;
 	margin:auto;
-	border:1px dashed green;
+	
 }
 .top-image {
 	width:100%;
-	border:1px solid red;	
+	
 }
 .top-image-wrapper{
 	width:60%;
 	margin:auto;
-	border:1px dashed pink;
+	
 }
 .wrapper {
-	border:1px solid purple;	
+	margin-top:30px;
 }
 
 .divbutton{
@@ -41,7 +41,7 @@ body{
 	width: 50%;
 	margin:auto;
 	padding:0;
-	border:1px solid red;
+	
 	position:relative;
 }
 .cl{
@@ -61,7 +61,7 @@ body{
 	margin-top:140px;
 	/*margin-top:calc(height * .5);*/
 	margin-left:30px;
-	border:1px solid red;
+	
 	
 }
 
@@ -71,7 +71,7 @@ body{
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
 	margin-left:480px;
-	border:1px solid red;
+	
 	
 }
 .playBtn_active{
@@ -83,7 +83,7 @@ body{
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
 	margin-left:480px;
-	border:1px solid red;
+	
 }
 .playBtn_deactive{
 	position:absolute;
@@ -94,7 +94,7 @@ body{
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
 	margin-left:480px;
-	border:1px solid red;
+	
 }
 .pauseBtn_active{
 	position:absolute;
@@ -105,7 +105,7 @@ body{
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
 	margin-left:450px;
-	border:1px solid red;
+	
 }
 .pauseBtn_deactive{
 	position:absolute;
@@ -116,14 +116,14 @@ body{
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
 	margin-left:450px;
-	border:1px solid red;
+	
 }
 .coins{
 	position:absolute;
 	width:150px;
 	margin-top:150px;
 	margin-left:200px;
-	border:1px solid white;
+	
 }
 .coinblock {
 /*	display: block;*/
