@@ -1,0 +1,151 @@
+
+/* CSS Document */
+
+body{
+	width:80%;
+	margin:auto;
+	border:1px solid green;
+	/*background-color:#c4c0cf;*/
+	background-color:#f4f4f4;
+	font:Arial 20pt, Helvetica, sans-serif ;
+}
+
+.heading {
+	width:100%;
+	border:1px solid yellow;
+		
+}
+.top-image {
+	width:100%;
+	border:1px solid red;	
+}
+.top-image-wrapper{
+	width:60%;
+	margin:auto;
+	border:1px dashed pink;
+}
+.wrapper {
+	border:1px solid purple;	
+}
+
+.divbutton{
+	height:50px;
+	border:1px solid green;
+}
+.slider-container  {
+	width: 50%;
+	margin:auto;
+	padding:0;
+	border:1px solid red;
+	position:relative;
+}
+.cl{
+	width:0;
+	height:0;
+	margin:0;
+	padding:0;
+	}
+
+#photo  {
+	width:100%;
+	
+	
+}
+.ltarrow{
+	position:absolute;
+	margin-top:140px;
+	/*margin-top:calc(height * .5);*/
+	margin-left:30px;
+	border:1px solid red;
+	
+}
+
+.rtarrow{
+	position:absolute;
+	margin-top:140px;
+	/*margin-top:calc(height * .5);*/
+	/*margin-left:calc(width - 30px);*/
+	margin-left:480px;
+	border:1px solid red;
+	
+}
+.playBtn_active{
+	position:absolute;
+	width:20px;
+	height:20px;
+	margin-top:30px;
+	background:url(../image/icon/play-circle-active.png) no-repeat;
+	/*margin-top:calc(height * .5);*/
+	/*margin-left:calc(width - 30px);*/
+	margin-left:480px;
+	border:1px solid red;
+}
+.playBtn_deactive{
+	position:absolute;
+	width:20px;
+	height:20px;
+	margin-top:30px;
+	background:url(../image/icon/play-circle-deactive.png) no-repeat;
+	/*margin-top:calc(height * .5);*/
+	/*margin-left:calc(width - 30px);*/
+	margin-left:480px;
+	border:1px solid red;
+}
+.pauseBtn_active{
+	position:absolute;
+	width:20px;
+	height:20px;
+	margin-top:30px;
+	background:url(../image/icon/pause-btn-active.png) no-repeat;
+	/*margin-top:calc(height * .5);*/
+	/*margin-left:calc(width - 30px);*/
+	margin-left:450px;
+	border:1px solid red;
+}
+.pauseBtn_deactive{
+	position:absolute;
+	width:20px;
+	height:20px;
+	margin-top:30px;
+	background:url(../image/icon/pause-btn-deactive.png) no-repeat;
+	/*margin-top:calc(height * .5);*/
+	/*margin-left:calc(width - 30px);*/
+	margin-left:450px;
+	border:1px solid red;
+}
+.coins{
+	position:absolute;
+	width:150px;
+	margin-top:150px;
+	margin-left:200px;
+	border:1px solid white;
+}
+.coinblock {
+/*	display: block;*/
+}
+ .coinblock .coinli {
+	 width:30px;
+	 height:30px;
+	 float:left;
+	 background:url(../image/icon/coin-deactive.png) no-repeat;
+	 list-style: none;
+ }
+ /*.coinblock .coinli a {
+	 width:30px;
+	 height:30px;
+	 display:block;
+ }*/
+ .coinblock .coinli_selected {
+	 width:30px;
+	 height:30px;
+	 float:left;
+	 list-style: none;
+	 background:url(../image/icon/coin-active.png) no-repeat;
+ }
+ .coinblock .coinli:hover {
+	 background:url(../image/icon/coin-active.png) no-repeat;
+ }
+	
+
+
+
