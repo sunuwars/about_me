@@ -7,7 +7,7 @@ body{
 	border:1px solid green;
 	/*background-color:#c4c0cf;*/
 	background-color:#f4f4f4;
-	font:Arial 20pt, Helvetica, sans-serif ;
+	font:normal 16px/1.6 ProximaNova-Regular, "Proxima Nova Rg", "Proxima Nova", sans-serif, Arial;
 }
 
 .heading {
