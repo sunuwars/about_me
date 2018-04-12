@@ -163,8 +163,14 @@ body{
 	 /*display:block;*/
 	 list-style: none;
 	 float:left;
-	 width:25%;
-	 
+	 width:33%;
+ }
+
+  .link-li-fcc{
+	 list-style: none;
+	 float:left;
+	 width:33%;
+	 margin:40px 0;
  }
 	
 
