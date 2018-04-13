@@ -59,20 +59,22 @@ body{
 }
 .ltarrow{
 	position:absolute;
-	margin-top:140px;
+	/*margin-top:140px; margin-left:30px;*/
 	/*margin-top:calc(height * .5);*/
-	margin-left:30px;
 	
+	margin-top:30%;
+	margin-left: 10%;
 	
 }
 
 .rtarrow{
 	position:absolute;
-	margin-top:140px;
+	/*margin-top:140px;margin-left:480px;*/
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
-	margin-left:480px;
 	
+	margin-top:30%;
+	margin-left: 90%;
 	
 }
 .playBtn_active{
@@ -122,8 +124,10 @@ body{
 .coins{
 	position:absolute;
 	width:150px;
-	margin-top:150px;
-	margin-left:200px;
+	/*margin-top:150px;
+	margin-left:200px;*/
+	margin-top:40%;
+	margin-left:30%;
 	
 }
 .coinblock {
