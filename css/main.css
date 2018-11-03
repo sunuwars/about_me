@@ -2,8 +2,9 @@
 /* CSS Document */
 
 body{
-	width:80%;
+	width:100%;
 	margin:auto;
+	border:1px solid green;
 	
 	/*background-color:#c4c0cf;*/
 	background-color:#f4f4f4;
@@ -57,68 +58,70 @@ body{
 	
 	
 }
-.ltarrow{
+.ltarrow, .rtarrow {
 	position:absolute;
+	/* top:calc(50% - 15px);
+	margin:auto; */
+	top:calc(50% - 15px);
+	bottom:0;
+	margin:auto;
+	
+}
+.ltarrow{
+	/* position:absolute; */
 	/*margin-top:140px; margin-left:30px;*/
 	/*margin-top:calc(height * .5);*/
 	
-	margin-top:30%;
-	margin-left: 10%;
+	/* margin-top:30%; */
+	left:0;
+	margin-left: -30px;
 	
 }
 
 .rtarrow{
-	position:absolute;
+	/* position:absolute; */
 	/*margin-top:140px;margin-left:480px;*/
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
 	
-	margin-top:30%;
-	margin-left: 90%;
+	/* margin-top:30%; */
+	right:0;
+	margin-right: -30px;
 	
 }
-.playBtn_active{
+.playBtn_active, .playBtn_deactive, .pauseBtn_active, .pauseBtn_deactive{
 	position:absolute;
 	width:20px;
 	height:20px;
-	margin-top:30px;
+	margin-top:10%;
+}
+.playBtn_active{
+
 	background:url(../image/icon/play-circle-active.png) no-repeat;
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
-	margin-left:480px;
+	margin-left:80%;
 	
 }
 .playBtn_deactive{
-	position:absolute;
-	width:20px;
-	height:20px;
-	margin-top:30px;
 	background:url(../image/icon/play-circle-deactive.png) no-repeat;
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
-	margin-left:480px;
+	margin-left:80%;
 	
 }
 .pauseBtn_active{
-	position:absolute;
-	width:20px;
-	height:20px;
-	margin-top:30px;
 	background:url(../image/icon/pause-btn-active.png) no-repeat;
-	/*margin-top:calc(height * .5);*/
-	/*margin-left:calc(width - 30px);*/
-	margin-left:450px;
+	
+	margin-left:calc(80% + 30px);
 	
 }
 .pauseBtn_deactive{
-	position:absolute;
-	width:20px;
-	height:20px;
-	margin-top:30px;
 	background:url(../image/icon/pause-btn-deactive.png) no-repeat;
 	/*margin-top:calc(height * .5);*/
 	/*margin-left:calc(width - 30px);*/
-	margin-left:450px;
+	/* margin-left:450px; */
+	margin-left:calc(80% + 30px);
 	
 }
 .coins{
@@ -126,7 +129,7 @@ body{
 	width:150px;
 	/*margin-top:150px;
 	margin-left:200px;*/
-	margin-top:40%;
+	margin-top:50%;
 	margin-left:30%;
 	
 }
@@ -176,7 +179,26 @@ body{
 	 width:33%;
 	 margin:40px 0;
  }
-	
+ /* .arrowImg {
+	 border:1px solid red;
+ } */
 
+ /* @media only screen and (max-width: 600px) {
+	 body{
+		 background-color:greenyellow;
+	 }
+	.slider-container  {
+		width: 80%;
+	}
+ } */
+ @media screen and (max-width: 600px) {
+	.slider-container {
+		width:80%;
+		border:1px solid red;
+	 }
+  
+}
+
+	
 
 
