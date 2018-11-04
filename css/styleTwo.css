@@ -1,8 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+/* @import url("https://fonts.googleapis.com/css?family=Eater|Oswald"); */
+
 body{
-  background-color: azure;
+  /* background-color: #f4f4f4; */
+  background-color:#E8EBF7;
   border:1px solid green;
   padding:0;
   margin:0;
+}
+.body-bkgnd{
+  width:100%;
+ 
+}
+/* odd child */
+ .body-bkgnd:nth-child(2n+1){
+  /* background-color:#F2D398; */
+  background-color:#B4B8AB;
+
+}
+/* even child */
+ .body-bkgnd:nth-child(2n){
+  background-color:#E8EBF7;
 }
 ul{
   display: flex;
@@ -11,31 +29,63 @@ ul{
   margin-block-start: 0;
   margin-block-end: 0;
   line-height: 3.2em;
-  background-color: yellow;
-}
+  background-color: #D6D1B1;}
 li {
   list-style: none;
-  font-size:1.1em;
+  font-size:1.2em;
+}
+header {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+#temp-pad{
+  padding-top: 2.1em;
+}
+#contact {
+  height:80vh;
+  border:1px solid black;
 }
 
 h1 {
   text-align:center;
-  position:sticky;
-  top:0;
-  background-color:azure;
+  /* position:sticky;
+  top:0; */
+  /* background-color:#f4f4f4; */
+  color:#8093F1;
   margin-block-end: 0.17em;
   padding-bottom: 0.5em;
 }
 section {
-  width: 80vw;
+  width: 85vw;
   margin: 0 auto;
 }
 figure {
-  width:70%;
-  border:1px solid red;
+  width:60%;
+  /* border:1px solid red; */
   margin: 0 auto;
   /* 1em=16px */
   padding-bottom:0; 
+}
+.banner {
+  padding-top: 8rem;
+  width: 100%;
+  min-height: 70vh;
+  height: auto;
+  background-image: url(../image/devFour_collage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#banner-cap-h1{
+  text-align:left;
+  padding-left: 1em;
+}
+.banner h1{
+  color:deepskyblue;
+  text-align:center;
+  background-color: transparent;
+  font-family: 'Kalam', cursive;
 }
 img {
   /* height: 300px; */
@@ -44,30 +94,41 @@ img {
     slider-container here , aspect_ratio=original_width/original_height, 
     new_height = original_width / aspect_ratio (1024/447)*/
   height: calc(100% / (1024 / 447) );
-  min-height: 180px;
+  min-height: 160px;
 }
 
 
 @media screen and (min-width: 600px) {
+  figure{
+    width:50%;
+    padding-bottom:1em;
+  }
+  #banner-cap-h1{
+    padding-left:1.5em;
+    font-size:3em;
+  }
+  .banner h1{
+    font-size:2.8em;
+  }
+  section {
+    width: 80vw;
+  }
   ul{
    justify-content: start;
    padding-inline-start: 10%;
   }
   li{
-    font-size:1.2em;
+    font-size:1.3em;
   }
   ul > li:not(:last-child){
     padding-right: 4em;
   }
-  h1 {
+  /* h1 {
     background-color:greenyellow;
   }
   body{
     background-color:greenyellow;
-  }
-  figure{
-    width:60%;
-    padding-bottom:1em;
-  }
+  } */
+  
 
 }
